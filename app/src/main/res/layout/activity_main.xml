@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="⚡ GAME BOOSTER" android:textColor="#4FC3F7"
+            android:textSize="28sp" android:textStyle="bold"
+            android:gravity="center" android:layout_marginTop="24dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="ZX Elite Performance Engine" android:textColor="#666666"
+            android:textSize="13sp" android:gravity="center" android:layout_marginBottom="32dp"/>
+        <TextView android:id="@+id/tvRamBefore"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="กำลังโหลด..." android:textColor="#FFFFFF"
+            android:textSize="15sp" android:layout_marginBottom="16dp"/>
+        <TextView android:id="@+id/tvStatus"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="พร้อมบูสต์" android:textColor="#AAAAAA"
+            android:textSize="14sp" android:gravity="center" android:layout_marginBottom="16dp"/>
+        <ProgressBar android:id="@+id/progressBar"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:visibility="gone" android:layout_marginBottom="16dp"/>
+        <Button android:id="@+id/btnBoost"
+            android:layout_width="match_parent" android:layout_height="64dp"
+            android:text="⚡ เริ่มบูสต์" android:textColor="#FFFFFF"
+            android:textSize="18sp" android:textStyle="bold"
+            android:backgroundTint="#1565C0" android:layout_marginBottom="24dp"/>
+        <LinearLayout android:id="@+id/layoutResult"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp"
+            android:visibility="gone" android:background="#0D2818">
+            <TextView android:id="@+id/tvRamAfter"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textColor="#66BB6A" android:textSize="15sp" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/tvAppsKilled"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textColor="#EF5350" android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
